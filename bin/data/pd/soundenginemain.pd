@@ -1,0 +1,73 @@
+#N canvas 245 128 860 568 10;
+#X obj 3 14 cnv 15 400 230 empty empty empty 20 12 0 14 -237165 -66577
+0;
+#X obj 4 251 cnv 15 500 230 empty empty Sound_item_1 20 12 0 14 -233017
+-66577 0;
+#X obj 51 459 dac~;
+#X text 80 335 Distance of the sound. The sound master volume will
+be computer according to them and also to the GPS coordinates given
+to the sound \, which are the second and third arguments to [sounditem]
+(yes \, that is the distance).;
+#X text 120 398 Azimuth angle between user and sound (radians);
+#X text 49 310 Turn or off the sound item;
+#X text 17 154 [sounditem] has as arguments \; - the name of the file
+to load \; And receives as inlets \; - onoff: turn on or off the dsp
+\; - distance: user gps coordinates \; - azimuth: angle between user
+and sound (radians);
+#X text 17 21 [soundengineMAIN] will be the main patch dealing with
+sound playback \; It will receive for each sound \, if it is on or
+off \, the distance and the azimuth angle between the user \; It will
+contain several [sounditem]s \, which are objects containing and processing
+each different sound file.;
+#X obj 511 250 cnv 15 180 230 empty empty Earcon 20 12 0 14 -233017
+-66577 0;
+#X obj 518 418 dac~;
+#X obj 412 14 cnv 15 200 230 empty empty OF_Receiver 20 12 0 14 -204786
+-66577 0;
+#X obj 437 60 r play;
+#X obj 437 81 route 1 2 3 4 5;
+#X floatatom 45 341 5 0 0 0 - - -, f 5;
+#X floatatom 80 401 5 0 0 0 - - -, f 5;
+#X floatatom 10 311 5 0 0 0 - - -, f 5;
+#X obj 149 273 unpack f f f;
+#X obj 149 254 r tosounditem1;
+#X obj 437 184 s tosounditem1;
+#X obj 454 164 s tosounditem2;
+#X obj 471 144 s tosounditem3;
+#X obj 489 124 s tosounditem4;
+#X obj 506 104 s tosounditem5;
+#N canvas 0 50 450 300 doc 0;
+#X text 28 23 The receiver expects a compound message from the openframeworks
+application. The message contains the sound index \, the distance \,
+and the azimuth angle to the user.;
+#X text 38 70 message example:;
+#X msg 46 91 2 30 1.57 1;
+#X text 127 92 send to the sound number 2 \; distance = 30 meters \;
+azimuth = 1.57 radians \; onoff = 1 (so play it);
+#X restore 545 18 pd doc;
+#X obj 517 303 r earconbang;
+#X obj 517 377 readsf~;
+#X msg 627 337 stop;
+#X msg 517 337 open zelda.wav \, 1;
+#X obj 10 418 sounditem speech1-mono.wav;
+#X obj 19 131 sounditem filename;
+#X connect 11 0 12 0;
+#X connect 12 0 18 0;
+#X connect 12 1 19 0;
+#X connect 12 2 20 0;
+#X connect 12 3 21 0;
+#X connect 12 4 22 0;
+#X connect 13 0 28 1;
+#X connect 14 0 28 2;
+#X connect 15 0 28 0;
+#X connect 16 0 15 0;
+#X connect 16 1 13 0;
+#X connect 16 2 14 0;
+#X connect 17 0 16 0;
+#X connect 24 0 27 0;
+#X connect 25 0 9 0;
+#X connect 25 0 9 1;
+#X connect 26 0 25 0;
+#X connect 27 0 25 0;
+#X connect 28 0 2 0;
+#X connect 28 1 2 1;

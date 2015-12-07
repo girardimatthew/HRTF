@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0E9F3DBA-579A-4D28-A06E-1FCD5F919672</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HRTF</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6D3BA957-B12F-499F-8F22-2FB311CB6DA3</key>
+		<string>https://github.com/openframeworks/openFrameworks.git</string>
+		<key>A352B489-3DE5-4E1F-A39B-ED6BC0FA5E45</key>
+		<string>https://github.com/danomatika/ofxPd</string>
+		<key>E62B902B-7A9F-451A-BB2E-0A311EF40DE9</key>
+		<string>https://github.com/thisisjl/HRTF.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>apps/myApps/orientationandPd/HRTF.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6D3BA957-B12F-499F-8F22-2FB311CB6DA3</key>
+		<string>../../../../..</string>
+		<key>A352B489-3DE5-4E1F-A39B-ED6BC0FA5E45</key>
+		<string>../../../../../addons/ofxPd</string>
+		<key>E62B902B-7A9F-451A-BB2E-0A311EF40DE9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/thisisjl/HRTF.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6D3BA957-B12F-499F-8F22-2FB311CB6DA3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A352B489-3DE5-4E1F-A39B-ED6BC0FA5E45</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxPd</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6D3BA957-B12F-499F-8F22-2FB311CB6DA3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>openFrameworks</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E62B902B-7A9F-451A-BB2E-0A311EF40DE9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>orientationandPd</string>
+		</dict>
+	</array>
+</dict>
+</plist>

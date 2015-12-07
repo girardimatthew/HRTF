@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="unspecified"><source path="/Library/openFrameworks/apps/myApps/HRTF/build/intermediates/exploded-aar/HRTF/ofAndroidLib/unspecified/assets"/></dataSet><dataSet config="main"><source path="/Library/openFrameworks/apps/myApps/HRTF/assets"/></dataSet><dataSet config="debug"><source path="/Library/openFrameworks/apps/myApps/HRTF/src/debug/assets"/></dataSet></merger>

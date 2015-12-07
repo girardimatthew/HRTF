@@ -1,0 +1,10 @@
+ofxGui
+ofxXmlSettings
+ofxAccelerometer
+ofxAndroid
+ofxSpatialHash
+ofxGeo
+ofxMaps
+ofxOrientation
+ofxTween
+ofxPd

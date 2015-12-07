@@ -1,0 +1,7 @@
+set solib-search-path /Library/openFrameworks/apps/myApps/HRTF/obj/local/x86:/Library/openFrameworks/apps/myApps/HRTF/libs/x86
+set sysroot /mgLib/android-ndk-r10e/platforms/android-19/arch-arm/
+directory /mgLib/android-ndk-r10e/platforms/android-19/arch-arm/usr/include
+directory /Library/openFrameworks/apps/myApps/HRTF/src
+directory /mgLib/android-ndk-r10e/sources/cxx-stl/system
+directory /Library/openFrameworks/apps/myApps/HRTF/libs/x86
+

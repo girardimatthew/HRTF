@@ -1,0 +1,105 @@
+#N canvas 346 60 903 669 10;
+#X obj 123 58 cnv 15 240 140 empty empty Distance 20 12 0 14 -233017
+-66577 0;
+#X obj -97 -45 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj -97 -64 inlet onOff;
+#X obj -185 0 cnv 15 150 170 empty empty read_sound_file 20 12 0 14
+-233017 -66577 0;
+#X obj -182 126 readsf~;
+#X obj -182 46 symbol \$1;
+#X symbolatom -182 68 10 0 0 0 - - -, f 10;
+#X obj 123 0 cnv 15 240 50 empty empty process_sound 20 12 0 14 -232576
+-66577 0;
+#X obj 137 92 r~ \$0-sound;
+#X obj 371 58 cnv 15 220 250 empty empty output_sound 20 12 0 14 -233017
+-66577 0;
+#X obj 390 136 r~ \$0-binauralsoundL;
+#X obj -182 24 loadbang;
+#X msg -182 86 open \$1 \, 1;
+#X obj -122 127 bng 15 250 50 0 empty empty loop 17 7 0 10 -262144
+-1 -1;
+#X msg -108 86 stop;
+#X obj -182 148 s~ \$0-sound;
+#X obj -17 -64 inlet distance;
+#X obj -17 -42 s \$0-distance;
+#X obj 283 -64 inlet azimuth;
+#X obj 283 -42 s \$0-azimuth;
+#X obj 245 92 r \$0-distance;
+#X obj 371 314 cnv 15 220 250 empty empty Room_model 20 12 0 14 -233017
+-66577 0;
+#X obj 123 363 cnv 15 240 200 empty empty Pinna_model 20 12 0 14 -233017
+-66577 0;
+#X obj 123 205 cnv 15 240 150 empty empty Head_model 20 12 0 14 -233017
+-66577 0;
+#X obj 136 332 ITDwithTheta;
+#X obj 513 -64 inlet elevation;
+#X obj 513 -42 s \$0-elevation;
+#X obj 284 123 r \$0-azimuth;
+#X obj 237 432 r \$0-azimuth;
+#X obj 269 452 r \$0-elevation;
+#X obj 166 392 r \$0-azimuth;
+#X obj 198 412 r \$0-elevation;
+#X text 370 -51 -pi to pi;
+#X text 77 -53 1 to 150 metres;
+#X obj 381 168 outlet~;
+#X obj 382 255 outlet~;
+#X obj 392 222 r~ \$0-binauralsoundR;
+#X obj 135 519 s~ \$0-binauralsoundL;
+#X obj 206 500 s~ \$0-binauralsoundR;
+#X obj -97 -28 switch~;
+#X obj 135 300 headShadow;
+#X obj 138 142 distance;
+#X obj 382 201 r~ \$0-roommodelsoundR;
+#X obj 382 498 s~ \$0-roommodelsoundL;
+#X obj 428 450 s~ \$0-roommodelsoundR;
+#X obj 380 115 r~ \$0-roommodelsoundL;
+#X obj 137 166 s~ \$0-soundDis;
+#X obj 136 234 r~ \$0-soundDis;
+#X obj 245 147 rSound;
+#X floatatom 193 271 5 0 0 0 - - -, f 5;
+#X obj 389 416 externalizationNK;
+#X obj 375 353 r \$0-distance;
+#X obj 206 472 pinnaDelays;
+#X obj 135 431 pinnaDelays;
+#X obj 474 361 r~ \$0-sound;
+#X connect 1 0 39 0;
+#X connect 2 0 1 0;
+#X connect 4 0 15 0;
+#X connect 4 1 13 0;
+#X connect 5 0 6 0;
+#X connect 6 0 12 0;
+#X connect 8 0 41 0;
+#X connect 10 0 34 0;
+#X connect 11 0 5 0;
+#X connect 12 0 4 0;
+#X connect 13 0 5 0;
+#X connect 14 0 4 0;
+#X connect 16 0 17 0;
+#X connect 18 0 19 0;
+#X connect 20 0 48 0;
+#X connect 20 0 41 1;
+#X connect 24 0 53 0;
+#X connect 24 1 52 0;
+#X connect 25 0 26 0;
+#X connect 27 0 48 1;
+#X connect 28 0 52 1;
+#X connect 29 0 52 2;
+#X connect 30 0 53 1;
+#X connect 31 0 53 2;
+#X connect 36 0 35 0;
+#X connect 40 0 24 0;
+#X connect 40 1 24 1;
+#X connect 41 0 46 0;
+#X connect 42 0 35 0;
+#X connect 45 0 34 0;
+#X connect 47 0 40 0;
+#X connect 48 0 40 1;
+#X connect 48 0 24 2;
+#X connect 48 0 49 0;
+#X connect 50 0 43 0;
+#X connect 50 1 44 0;
+#X connect 51 0 50 0;
+#X connect 52 0 38 0;
+#X connect 53 0 37 0;
+#X connect 54 0 50 1;
