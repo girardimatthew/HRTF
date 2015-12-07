@@ -1,4 +1,4 @@
 # HRTF
-Simple android project using openframeworks.
-It uses the addons: [ofxTween](https://github.com/arturoc/ofxTween), [ofxPd](https://github.com/danomatika/ofxPd), [ofxGeo](https://github.com/bakercp/ofxGeo), [ofxAccelerometer](https://github.com/openframeworks/openFrameworks/tree/master/addons/ofxAccelerometer), [ofxAndroid](https://github.com/openframeworks/openFrameworks/tree/master/addons/ofxAndroid).
-# HRTF
+This is an Android application developed as first 'Sound and Music Computing' semester project.
+It is an "Audio Treasure Hunt"; the user has to find a sound which is randomly located around him. 
+This version use an HRTF model (Dude-Brown 1997) as sound engine. 
