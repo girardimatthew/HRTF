@@ -361,7 +361,7 @@ void ofApp::draw(){
             // debugging variable
             // debVar = "distance[1]: " + ofToString(distance[1]) + "\nThetaR[1]: " + ofToString(azimuth[1]) + "\ndistance[2]: " + ofToString(distance[2]) + "\nThetaR[2]: " + ofToString(azimuth[2]) + "\ndistance[3]: " + ofToString(distance[3]) + "\nThetaR[3]: " + ofToString(azimuth[3]) + "\ndistance[4]: " + ofToString(distance[4]) + "\nThetaR[4]: " + ofToString(azimuth[4]); //+ "\ndistance[5]: " + ofToString(distance[5]) + "\nThetaR[5]: " + ofToString(azimuth[5]);
             //debVar = "intermediateDis: " + ofToString(intermediateDistance[0]) + "\ndistance: " + ofToString(distance[0]) + "\nintermediateAzimuth: " + ofToString(intermediateAzimuth[0]) + "\nazimuth: " + ofToString(azimuth[0]) + "\nmyLastGPScoord: " + ofToString(myLastGPScoord) + "\nsoundLocationCounter:" + ofToString(soundLocationCounter) + "\ntrialState: " + ofToString(trialState) + "\ntrialNumber: " + ofToString(trialNumber) + "\nearconPlayed: " + ofToString(earconPlayed); 
-            debVar = "trialState: " + ofToString(trialState) + "\ntrialNumber: " + ofToString(trialNumber) + "\nearconPlayed: " + ofToString(earconPlayed);
+            debVar = ofToString(myGPScoord) + "\ntrialState: " + ofToString(trialState) + "\ntrialNumber: " + ofToString(trialNumber) + "\nearconPlayed: " + ofToString(earconPlayed);
 
             break;
     }
@@ -388,7 +388,7 @@ void ofApp::draw(){
 	// font.drawString(myDistance,100,175);
 	// font.drawString(myAngle,100,200);
 	font.drawString(debVar,100,100);
-    font.drawString("TAP TWICE TO START TRAINING TRIAL",100,heightDiv+50);
+    font.drawString("TAP TWICE TO START TRAINING TRIAL!",100,heightDiv+50);
     font.drawString("TAP TWICE TO START NEXT TEST TRIAL!",100,heightDiv*2+50);
 }
 
