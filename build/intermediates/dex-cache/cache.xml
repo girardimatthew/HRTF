@@ -5,7 +5,7 @@
         jar="/Library/openFrameworks/apps/myApps/HRTF/build/intermediates/exploded-aar/HRTF/ofAndroidLib/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="21.1.1"
-        sha1="af4f207d4ecd00fef5ab314d8372da4bf3ff6ce7">
+        sha1="01554230b089acd94e403a6f3f363352b6dea741">
         <dex dex="/Library/openFrameworks/apps/myApps/HRTF/build/intermediates/pre-dexed/debug/classes-0fbb7ae505a3a984ad83b9c462d6be52ac73eac5.jar" />
     </item>
 
